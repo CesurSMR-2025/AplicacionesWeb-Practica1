@@ -1,4 +1,4 @@
-# AplicacionesWeb-Practica1
+# Aplicaciones Web - Práctica1: Introducción a HTML
 
 ## Preparación del Entorno
 Vamos a utilizar **Visual Studio Code (VSCode)** para crear nuestras páginas web.
