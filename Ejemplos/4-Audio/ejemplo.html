@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Práctica 1 — Audio</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1 title="Sección de audio">Audio en HTML</h1>
+    </header>
+
+    <h2>1) Reproductor básico (con mensaje de respaldo)</h2>
+    <p>
+        <audio controls>
+            <source src="audio/sample1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento <code>audio</code>.
+            Puedes <a href="audio/sample1.mp3">descargar el archivo MP3</a>.
+            
+        </audio>
+    </p>
+
+
+    <h2>2) Ejemplo de archivo no encontrado</h2>
+    <p>
+        <audio controls>
+            <source src="audio/sample4.mp3" type="audio/mpeg">
+        </audio>
+    </p>
+
+    <h2>3) Reproducción en bucle</h2>
+    <p>
+        <audio controls autoplay loop>
+            <source src="audio/sample3.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento <code>audio</code>.
+            Puedes <a href="audio/sample3.mp3">descargar el archivo MP3</a>.
+        </audio>
+
+        <audio controls autoplay loop>
+            <source src="audio/sample2.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento <code>audio</code>.
+            Puedes <a href="audio/sample2.mp3">descargar el archivo MP3</a>.
+        </audio>
+    </p>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Práctica 1 — Audio</p>
+    </footer>
+</body>
+</html>

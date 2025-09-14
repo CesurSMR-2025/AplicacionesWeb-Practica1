@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Práctica 1 — Imágenes</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1 title="Sección de imágenes">Imágenes en HTML</h1>
+    </header>
+
+    <!-- Nota de proyecto (estructura sugerida)
+         proyecto/
+           index.html
+           img/
+             logo.png
+             perfil.jpg
+             decorativo.png
+    -->
+
+    <h2>1) Imagen externa con alt</h2>
+    <p>
+        <!-- Imagen desde Internet (ruta absoluta) -->
+        <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b9/Shrek_2_poster.jpg"
+            alt="Poster de la película Shrek 2">
+    </p>
+
+    <h2>2) Imagen interna con title</h2>
+    <p>
+        <!-- Imagen dentro de tu proyecto (ruta relativa) -->
+        <img
+            src="img/shrek.png"
+            alt="Se deberia ver una imagen de Shrek"
+            title="Imagen de Shrek">
+    </p>
+
+    <h2>3) Controlar tamaño sin deformar (solo width)</h2>
+    <p>
+        <!-- Definir solo width mantiene proporciones -->
+        <img
+            src="img/shrek.png"
+            alt="Fotografía de Shrek"
+            width="400">
+    </p>
+
+    <h2>4) Controlar tamaño deformando (width y height)</h2>
+    <p>
+        <!-- Definir solo width mantiene proporciones -->
+        <img
+            src="img/shrek.png"
+            alt="Fotografía de Shrek"
+            width="80"
+            height="350">
+    </p>
+
+    <h2>4) Imagen Ausente</h2>
+    <p>
+        <!-- Si la imagen no aporta información, usa alt="" -->
+        <img
+            src="img/ausente.png"
+            alt="Aqui deberia ir una imagen, pero no se encuentra"
+            title="">
+        <br>
+    </p>
+
+    <h2>5) Imagen con enlace</h2>
+    <p>
+        <!-- Combinar <a> y <img> para que la imagen sea clicable -->
+        <a href="https://es.wikipedia.org/wiki/Shrek" title="Volver al inicio">
+            <img
+                src="img/shrek.png"
+                alt="Imagen de Shrek que enlaza a Wikipedia"
+                width="120"
+                height="120">
+        </a>
+    </p>
+
+    <h2>6) GIF animado</h2>
+    <p>
+        <!-- Combinar <a> y <img> para que la imagen sea clicable -->
+        <a href="https://es.wikipedia.org/wiki/Shrek" title="Volver al inicio">
+            <img
+                src="img/shrek.gif"
+                alt="GIF animado de Shrek"
+                width="300"
+                height="300">
+        </a>
+    </p>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Práctica 1 — Imágenes</p>
+    </footer>
+</body>
+</html>
