@@ -522,3 +522,11 @@ El **contenido embebido** permite insertar recursos de otras fuentes dentro de n
   <title>Página con metadatos</title>
 </head>
 ```
+
+---
+Aquí se recogen solo algunos de los tags y atributos de HTML que he considerado de mayor importancia para introducir este lenguaje de marcas. Sin embargo HTML cuenta con aproximadamente 140 tags, cada cual con sus propios atributos.
+<br>
+
+Si quereis conocer mas os animo a consultar este listado de las etiquetas disponibles, o cualquier otro que considereis mejor. 
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
