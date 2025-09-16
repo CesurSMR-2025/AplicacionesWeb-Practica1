@@ -42,7 +42,8 @@ En ambos casos:
 - Cada vez que guardes el archivo, la página se actualizará sola.
 
 ### ¿Cómo abrir la página con estas extensiones?
-- 
+- **Live Server**: Click derecho en el archivo html y seleccionar la opción **"Open with Live Server"**.
+- **Live Preview**: Click derecho en el archivo html y seleccionar la opción **"Show Preview"**.
 
 ### ¿Qué es una IP?
 - Una dirección **IP (Internet Protocol)** es como la "dirección" de un ordenador en la red.  
@@ -88,12 +89,14 @@ Antes de escribir una página completa, vamos a entender cómo funciona HTML.
 ### ¿Qué es un elemento HTML?
 - Un **elemento** HTML está formado por:
   - Una **etiqueta de apertura** (tag de apertura).
-  - Un **contenido** (texto u otros elementos).
-  - Una **etiqueta de cierre** (tag de cierre).
-- Ejemplo: `<p>Hola mundo</p>`  
-  - `<p>` → etiqueta de apertura.  
-  - `Hola mundo` → contenido.  
-  - `</p>` → etiqueta de cierre.  
+  - Un **contenido**(Opcional, dependiendo de la etiqueta):texto u otros elementos).
+  - Una **etiqueta de cierre**(Opcional, dependiendo de la etiqueta)
+  - **Atributos**(Opcional)
+- Ejemplo: `<p align = center>Hola mundo</p>`  
+  - `<p>`: etiqueta de apertura.  
+  - `Hola mundo`: contenido.  
+  - `</p>`: etiqueta de cierre.
+  - `align`: atributo (con valor "center").
 
 ### ¿Qué es un tag?
 - Un **tag** es la parte entre `< >` que le dice al navegador cómo debe interpretar el contenido.  
@@ -105,9 +108,10 @@ Antes de escribir una página completa, vamos a entender cómo funciona HTML.
 ### ¿Qué son los atributos?
 - Los **atributos** son información extra que se puede añadir a un tag para modificar su comportamiento o dar más detalles.  
 - Siempre van en la **etiqueta de apertura**.  
-- Se escriben como `nombre="valor"`.  
+- Se escriben como `nombre="valor"`.
+- Si el valor esta formado unicamente por una palabra enconces se pueden omitir las comillas dobles.
 
-Ejemplo sencillo:  
+Ejemplo:  
 - El atributo **`title`** sirve para añadir una descripción o información extra sobre un elemento.  
 - Normalmente, el navegador muestra ese texto como un **tooltip** (cuadro emergente) al pasar el ratón por encima.
 - Del atributo **`align`** ya hablaremos en la siguiente práctica.
@@ -129,7 +133,7 @@ Todos los archivos HTML empiezan con un “esqueleto” común:
    - Es el contenedor principal. Todo el contenido de la página va dentro de `<html> ... </html>`.
 
 3. **Etiqueta `<head>`**  
-   - Contiene información **sobre la página**, no visible directamente.  
+   - Contiene información **sobre la página**(metadatos), no visible directamente.  
    - Ejemplo: el título que aparece en la pestaña del navegador (`<title>`).
 
 4. **Etiqueta `<body>`**  
@@ -166,7 +170,6 @@ Ejemplo:
 ---
 
 ## Hiperenlaces
-
 Un **hiperenlace** (enlace o *link*) es un elemento que permite **navegar de una página a otra** o abrir recursos externos.  
 En HTML los hiperenlaces se crean con la etiqueta `<a>` (*anchor*, que significa "ancla").  
 
@@ -203,6 +206,7 @@ Si aún no tienes el destino del enlace, puedes usar `#` como marcador temporal:
 ```html
 <a href="#">Enlace pendiente</a>
 ```
+Esto es util en algunos casos, como durante el desarrollo de la página web, si queremos eliminar un enlace caido o si el enlace se genera de forma dinámica(ya lo veremos).
 
 ### Enlaces a correo
 - Los enlaces con `mailto:` abren el cliente de correo del usuario para redactar un email.
@@ -226,7 +230,7 @@ Si aún no tienes el destino del enlace, puedes usar `#` como marcador temporal:
 - **`width`** y **`height`**: tamaño en **píxeles** (por defecto).  
   - Mejor definir **solo uno** para mantener la proporción.  
   - Si pones ambos con valores que no coinciden con la proporción original, la imagen se **deformará**.
-- *(Opcional)* **`title`**: texto informativo que aparece como **tooltip** al pasar el ratón.  
+- * **`title`**: texto informativo que aparece como **tooltip** al pasar el ratón.  
 
 ### Rutas de imágenes (`src`)
 - **Ruta absoluta (externa)**: apunta a Internet.  
@@ -299,8 +303,6 @@ El elemento `<video>` permite **reproducir vídeo** en una página web.
 - **`poster`**: imagen que se muestra antes de reproducir (miniatura/portada).
 - **`width` / `height`**: tamaño del reproductor. Define **solo uno** para no deformar.
 
-> Recomendación: usa **varias fuentes** (`<source>`) en diferentes formatos para compatibilidad y deja un **mensaje de respaldo** (con enlace de descarga) por si el navegador no soporta `<video>`.
-
 ### Formatos comunes
 - **MP4 (video/mp4)**: el más compatible; buena calidad y compresión.
 - **WebM (video/webm)**
@@ -331,8 +333,6 @@ Estas etiquetas sirven para **dar formato** al texto. Recuerda: algunas tienen *
 <hr>
 <p>Este texto aparece tras una línea separadora (&lt;hr&gt;).</p>
 ```
-
-
 
 ### Negrita y cursiva semánticas
 - **`<strong>`** → importancia (negrita por defecto).
@@ -446,7 +446,79 @@ Las listas sirven para **organizar información** de manera ordenada o desordena
 ```
 
 ## Tablas
-## Botones
-## Formularios
-## Metadatos
+
+Las **tablas** organizan datos en **filas** y **columnas**.
+
+### Etiquetas principales
+- **`<table>`**: contenedor de la tabla.  
+- **`<tr>`** (*table row*): una **fila**.  
+- **`<th>`** (*table header*): **celda de encabezado** (suele verse en negrita).  
+- **`<td>`** (*table data*): **celda de datos**.
+ 
 ## Contenido Embebido
+
+El **contenido embebido** permite insertar recursos de otras fuentes dentro de nuestra página web:  vídeos de YouTube, mapas de Google, documentos, etc.  
+
+### Etiqueta `<iframe>`
+- **`<iframe>`** (*inline frame*) crea una “ventana” dentro de la página que muestra otra página web o recurso.  
+- Usada para **incrustar** contenido externo.  
+
+### Atributos principales
+- **`src`** → dirección del recurso (ej. enlace a YouTube, Google Maps…).  
+- **`width`** y **`height`** → tamaño del área visible.  
+- **`title`** → descripción del contenido embebido (importante para accesibilidad).  
+- **`allowfullscreen`** → permite ver el recurso a pantalla completa (útil en vídeos).  
+- **`frameborder`** → define si hay borde alrededor (0 = sin borde, 1 = con borde).  
+
+**NOTA IMPORTANTE**: Los videos embebidos de Youtube pueden no funcionar si se utiliza `127.0.0.1` por políticas de seguridad, utilizar `localhost`.
+### Ejemplo con YouTube
+```html
+<iframe width="560" height="315"
+        src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        title="Video de ejemplo"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
+```
+
+## Metadatos
+- Los **metadatos** son información **sobre la página**, no visible directamente en el contenido.  
+- Se colocan dentro de la etiqueta `<head>` y ayudan a los navegadores, buscadores y redes sociales a entender mejor la web.
+
+### Etiquetas de metadatos comunes
+
+- **Título de la página (`<title>`)**: Aparece en la pestaña del navegador y en los resultados de búsqueda.  
+```html
+  <title>Mi primera página</title>
+```
+- **Codificación de caracteres(`meta charset="UTF-8">`)**: Indica cómo interpretar los caracteres (UTF-8 permite usar acentos, eñes, símbolos).
+```html
+<meta charset="UTF-8">
+```
+
+- **Descripción (`<meta name="description">`)**: Resumen de la página (importante para buscadores).
+```html
+<meta name="description" content="Página de ejemplo para aprender HTML.">
+```
+
+- **Autor (`<meta name="author">`)**: Indica el creador de la página.
+```html
+<meta name="author" content="Nombre del alumno">
+```
+
+- **Palabras clave (`<meta name="keywords">`)** (menos usado hoy en día): Lista de términos relacionados con la página.
+```html
+<meta name="keywords" content="HTML, práctica, SMR">
+```
+
+- Ejemplo de <head> con metadatos
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de metadatos en HTML.">
+  <meta name="author" content="Alumno SMR">
+  <meta name="keywords" content="HTML, metadatos, ejemplo">
+  <title>Página con metadatos</title>
+</head>
+```

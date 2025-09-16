@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Práctica 1 — Tablas</title>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de Tablas en HTML</h1>
+    </header>
+
+    <h2>Tabla básica</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>20</td>
+            <td>Zaragoza</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>22</td>
+            <td>Huesca</td>
+        </tr>
+    </table>
+
+    <h2>Tabla con secciones</h2>
+    <table border="1">
+        <caption>Inventario de frutas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kebab</td>
+                <td>5</td>
+                <td>25€</td>
+            </tr>
+            <tr>
+                <td>Patatas</td>
+                <td>8</td>
+                <td>24€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total</strong></td>
+                <td>49€</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tabla combinando celdas</h2>
+    <table border="1">
+        <tr>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+        </tr>
+        <tr>
+            <th scope="row">Mañana</th>
+            <td rowspan="2">Redes Locales</td>
+            <td>Sistemas Operativos</td>
+        </tr>
+        <tr>
+            <th scope="row">Tarde</th>
+            <td>Aplicaciones Ofimáticas</td>
+        </tr>
+    </table>
+
+    <p>
+        <a href="../../index.html" title="Volver a la página de inicio">Volver</a>
+    </p>
+
+    <footer>
+        <p>© 2025 Práctica 1 — Tablas</p>
+    </footer>
+</body>
+</html>
