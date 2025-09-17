@@ -471,6 +471,7 @@ El **contenido embebido** permite insertar recursos de otras fuentes dentro de n
 - **`frameborder`** → define si hay borde alrededor (0 = sin borde, 1 = con borde).  
 
 **NOTA IMPORTANTE**: Los videos embebidos de Youtube pueden no funcionar si se utiliza `127.0.0.1` por políticas de seguridad, utilizar `localhost`.
+
 ### Ejemplo con YouTube
 ```html
 <iframe width="560" height="315"
@@ -529,4 +530,4 @@ Aquí se recogen solo algunos de los tags y atributos de HTML que he considerado
 
 Si quereis conocer mas os animo a consultar este listado de las etiquetas disponibles, o cualquier otro que considereis mejor. 
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+[Lista de tags de HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
