@@ -553,12 +553,17 @@ El objetivo es crear un sitio web sencillo aplicando lo que hemos aprendido.
   </body>
 </html>
 ```
+- Se deben utilizar <h1> a <h6> para los encabezados de las distintas secciones de cada página.
+- Se debe utilizar la etiqueta `<p>` para los párrafos de texto.
 - Todas las páginas deben incluir metadatos en el `<head>` (al menos `charset`, `description`, `author` y `keywords`).
 - Todas las páginas deben tener un título en su pestaña (etiqueta `<title>` dentro de `<head>`). Distinto (por ejemplo "Home, Contacto, ...") o el mismo (por ejemplo el nombre del sitio web).
 - Todas las páginas deben tener un icono en la pestaña (favicon). El icono debe estar en la carpeta del proyecto y se debe referenciar en el `<head>` con la etiqueta `<link>`.
 - Todas las páginas deben tener una cabecera (etiqueta `<header>`) y un pie de página (etiqueta `<footer>`).
 - En el sitio web debe haber al menos 5 páginas HTML distintas.
 - Todas las páginas deben ser accesibles entre si mediante hiperenlaces.
+- Se debe incluir al menos 1 hiperenlace de texto a una página web externa.
+- Se debe incluir al menos 1 hiperenlace de imagen.
+- Se debe incluir al menos 1 hiperenlace a una dirección de correo electrónico. (Real o falsa)
 - Se deben incluir al menos 3 imágenes distintas en el sitio web.
 - Se debe incluir al menos 1 audio en el sitio web.
 - Se debe incluir al menos 1 video en el sitio web.
