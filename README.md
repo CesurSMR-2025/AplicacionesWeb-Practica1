@@ -569,3 +569,5 @@ El objetivo es crear un sitio web sencillo aplicando lo que hemos aprendido.
 - **IMPORTANTE**: Se deben utilizar comentarios en cada una de las paginas HTML del sitio web para explicar las distintas secciones. (Ejemplo: `<!-- Este es un comentario -->`)
 - Se deben utilizar al menos 2 etiquetas que no se hayan explicado/utilizado en este documento. Se debe explicar en un comentario para qué sirve cada una.
 - Se deben utilizar al menos 2 atributos que no se hayan explicado/utilizado en este documento. Se debe explicar en un comentario para qué sirve cada uno.
+
+Fecha limite de entrega **3 de octubre**. Despues de esto os corregire la practica y os dare feedback. Tendreis despues hasta el **10 de octubre** para corregir los errores que haya detectado y volver a entregar la practica.
