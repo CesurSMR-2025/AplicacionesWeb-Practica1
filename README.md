@@ -534,6 +534,7 @@ Si quereis conocer mas os animo a consultar este listado de las etiquetas dispon
 
 ## Entregable
 El objetivo es crear un sitio web sencillo aplicando lo que hemos aprendido.
+
 - La carpeta del proyecto debe llamarse `Practica1-<nombre>-<apellido>`.
 - En la carpeta raiz del proyecto debera haber un archivo `index.html` con la página web principal.
 - Dentro de la carpeta del proyecto debe haber una subcarpeta llamada `img` donde se guarden las imágenes usadas en el sitio web.
