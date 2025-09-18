@@ -533,8 +533,38 @@ Si quereis conocer mas os animo a consultar este listado de las etiquetas dispon
 [Lista de tags de HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 
 ## Entregable
-El objetivo es crear una página web sencilla aplicando lo que hemos aprendido.
+El objetivo es crear un sitio web sencillo aplicando lo que hemos aprendido.
 - La carpeta del proyecto debe llamarse `Practica1-<nombre>-<apellido>`.
-- En la carpeta raiz del proyecto debera haber un archivo `index.html` con la página principal.
-- Todos los archivos html empezarse declarando el tipo de documento con `<!DOCTYPE html>`.
+- En la carpeta raiz del proyecto debera haber un archivo `index.html` con la página web principal.
+- Dentro de la carpeta del proyecto debe haber una subcarpeta llamada `img` donde se guarden las imágenes usadas en el sitio web.
+- Dentro de la carpeta del proyecto debe haber una subcarpeta llamada `audio` donde se guarden los archivos de audio usados en el sitio web.
+- Dentro de la carpeta del proyecto debe haber una subcarpeta llamada `video` donde se guarden los archivos de video usados en el sitio web.
+- Todos los archivos html deben empezar declarando el tipo de documento con `<!DOCTYPE html>`.
 - Todos los documentos deben tener una estructura básica con las etiquetas `<html>`, `<head>` y `<body>`. Concretamente: 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadatos y configuraciones de la página -->
+  </head>
+  <body>
+    <!-- Contenido de la página -->
+  </body>
+</html>
+```
+- Todas las páginas deben incluir metadatos en el `<head>` (al menos `charset`, `description`, `author` y `keywords`).
+- Todas las páginas deben tener un título en su pestaña (etiqueta `<title>` dentro de `<head>`). Distinto (por ejemplo "Home, Contacto, ...") o el mismo (por ejemplo el nombre del sitio web).
+- Todas las páginas deben tener un icono en la pestaña (favicon). El icono debe estar en la carpeta del proyecto y se debe referenciar en el `<head>` con la etiqueta `<link>`.
+- Todas las páginas deben tener una cabecera (etiqueta `<header>`) y un pie de página (etiqueta `<footer>`).
+- En el sitio web debe haber al menos 5 páginas HTML distintas.
+- Todas las páginas deben ser accesibles entre si mediante hiperenlaces.
+- Se deben incluir al menos 3 imágenes distintas en el sitio web.
+- Se debe incluir al menos 1 audio en el sitio web.
+- Se debe incluir al menos 1 video en el sitio web.
+- Se deben incluir al menos 3 etiquetas de formateado de texto distintas.
+- Se deben incluir al menos una lista.
+- Se debe incluir al menos una tabla.
+- Se debe incluir al menos un contenido embebido (iframe).
+- **IMPORTANTE**: Se deben utilizar comentarios en cada una de las paginas HTML del sitio web para explicar las distintas secciones. (Ejemplo: `<!-- Este es un comentario -->`)
+- Se deben utilizar al menos 2 etiquetas que no se hayan explicado/utilizado en este documento. Se debe explicar en un comentario para qué sirve cada una.
+- Se deben utilizar al menos 2 atributos que no se hayan explicado/utilizado en este documento. Se debe explicar en un comentario para qué sirve cada uno.
