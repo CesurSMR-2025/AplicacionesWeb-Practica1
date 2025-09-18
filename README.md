@@ -531,3 +531,10 @@ Aquí se recogen solo algunos de los tags y atributos de HTML que he considerado
 Si quereis conocer mas os animo a consultar este listado de las etiquetas disponibles, o cualquier otro que considereis mejor. 
 
 [Lista de tags de HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+
+## Entregable
+El objetivo es crear una página web sencilla aplicando lo que hemos aprendido.
+- La carpeta del proyecto debe llamarse `Practica1-<nombre>-<apellido>`.
+- En la carpeta raiz del proyecto debera haber un archivo `index.html` con la página principal.
+- Todos los archivos html empezarse declarando el tipo de documento con `<!DOCTYPE html>`.
+- Todos los documentos deben tener una estructura básica con las etiquetas `<html>`, `<head>` y `<body>`. Concretamente: 
