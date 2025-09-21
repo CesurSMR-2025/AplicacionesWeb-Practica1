@@ -553,7 +553,7 @@ El objetivo es crear un sitio web sencillo aplicando lo que hemos aprendido.
   </body>
 </html>
 ```
-- Se deben utilizar <h1> a <h6> para los encabezados de las distintas secciones de cada página.
+- Se deben utilizar `<h1>` a `<h6>` para los encabezados de las distintas secciones de cada página.
 - Se debe utilizar la etiqueta `<p>` para los párrafos de texto.
 - Todas las páginas deben incluir metadatos en el `<head>` (al menos `charset`, `description`, `author` y `keywords`).
 - Todas las páginas deben tener un título en su pestaña (etiqueta `<title>` dentro de `<head>`). Distinto (por ejemplo "Home, Contacto, ...") o el mismo (por ejemplo el nombre del sitio web).
